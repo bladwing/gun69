@@ -1,0 +1,34 @@
+[
+{
+    "title": "ავტომატი AK47",
+    "author": "Mikheil Kalashnikov",
+    "aboutGun": "",
+    "price": "2500",
+    "imageLink": "images/ak47.png",
+    "id": 1554936369658
+  },
+  {
+    "title": "ავტომატი AK47",
+    "author": "Mikheil Kalashnikov",
+    "aboutGun": "",
+    "price": "2500",
+    "imageLink": "images/ak47.png",
+    "id": 1554936369658
+  },
+  {
+    "title": "პისტოლეტი",
+    "author": "Mikheil Kalashnikov",
+    "aboutGun": "",
+    "price": "1500",
+    "imageLink": "images/slide1.png",
+    "id": 1554936383582
+  },
+  {
+    "title": "ავტომატი AK47",
+    "author": "Mikheil Kalashnikov",
+    "aboutGun": "",
+    "price": "1200",
+    "imageLink": "images/ak47.png",
+    "id": 1554937364430
+  }
+]

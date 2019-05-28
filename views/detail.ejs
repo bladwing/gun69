@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>დეტალურად</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheets/reset.css">
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<link rel="stylesheet" href="/stylesheets/modal.css">
+    <script src="/javascripts/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <main>
+    <div class="logo" id="logo"></div>
+    <form action="get" class="search" id="search"></form>
+
+     <button class="auth-button-main" id="myBtn" >ავტორიზაცია</button>
+
+     <span class="label-place opnCard"></span> 
+     <i class="fas fa-cart-arrow-down  opnCard" id="open"></i>
+  </main>
+
+    <nav id="nav"><% include blocks/nav.ejs %></nav>
+
+
+<!-- ========================Modal Login start==================================== -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="container">
+    	<img src="/images/logo.png" alt="">
+    <form action="post" class="login-form">
+    	<div id="error" class="error"></div>
+    	<input type="text" class="auth-form" placeholder="მომხმარებელი" id="username" required>
+    	<input type="password" placeholder="პაროლი" class="auth-form" id="userpassword" required>
+    	<hr>
+    	<button type="button" class="login-button" id="loginBtn"><i class="fas fa-sign-in-alt">ავტორიზაცია</i></button>
+    	<button type="button" class="registration-button" onclick="window.location.href='registration.html'"><i class="fas fa-user">რეგისტრაცია</i></button>
+    </form>
+    </div>
+  </div>
+
+</div>
+
+<section class="detail">
+            
+            <div class="top-block">
+                <%= bulled.title %>
+            </div>
+            <div class="block-left">
+                <img alt="<%= bulled.title %>" src="<%= bulled.imageLink %>" />
+            </div>
+            <div class="block-right">
+            <span class="author">ინჯინერი: <%= bulled.author %></span> 
+            <span class="country">კვეყანა: <%= bulled.country %> </span>
+            <span class="id">კოდი: <%= bulled.id %> </span> 
+            <span class="year">წელი: <%= bulled.year %></span> 
+                <button class="addToCard productOpt" data-id="<%= bulled.id %>" data-title="<%= bulled.title %>" data-price="<%= bulled.price %>" data-img="<%= bulled.imageLink %>">ყიდვა</button>
+                
+            </div>
+            
+</section>
+ 
+
+	<footer>
+		<section class="footer-link" id="footer-link"></section>
+		<section class="copyright" id="copyright"></section>
+	</footer>
+<script src="/javascripts/modal.js"></script>
+<script src="/javascripts/main.js"></script>
+<script src="/javascripts/tcard.js"></script>
+</body>
+</html>

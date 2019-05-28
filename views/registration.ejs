@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gun || Ammo</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/modal.css">
+
+</head>
+<body>
+<main>
+    <div class="logo" id="logo"></div>
+    <form action="get" class="search" id="search"></form>
+     <button class="auth-button-main" id="myBtn" >ავტორიზაცია</button>
+     <span class="label-place opnCard"></span> 
+     <i class="fas fa-cart-arrow-down  opnCard" id="open"></i>
+  </main>
+
+	<nav id="nav"><% include blocks/nav.ejs %></nav>
+
+<nav id="nav"></nav>
+<div class="reg-form">
+				<h1>გთხოვთ შეავსოთ ყველა ველი.</h1>
+		<form action="user.html" name="reg-form" method="POST" id="reg-form" class="registration-form form-desc">
+			<div class="alert alert-warning hidden">
+				<ol class="errors">
+				</ol>
+			</div>
+			
+			<input type="text" name="name" id="name" placeholder="სახელი და გვარი" required>
+			<input type="text" name="username" id="username" placeholder="მომხმარებლი" required>
+			<input type="password" name="personal number" min="11" max="11" id="password" placeholder="პაროლი" required>
+			<input type="email" name="email" id="email" placeholder="ელ.ფოსტა" required>
+			<input type="number" name="phone" id="telephone" placeholder="ტელეფონი" required>
+			<br>
+			<button type="button" class="btn form-btn" id="sendData">Register</button>
+		</form>
+
+	</div>
+
+
+
+
+
+
+
+
+<!-- <section class="reg-form">
+	<h1>გთხოვთ შეავსოთ ყველა ველი.</h1>
+	<form action="" method="POST" class="registration-form" id="Post"><br>
+		<div class="alert alert-warning hidden">
+				<ol class="errors">
+
+				</ol>
+			</div>
+		<input type="name" id="name" placeholder="სახელი & გვარი"><br>
+		<input type="name" id="username" placeholder="მომხმარებლის სახელი" >
+		<input type="password" id="password" placeholder="პაროლი" minlength="4" maxlength="16"><br>
+		<input type="email" id="mail" placeholder="ელ. ფოსტა" maxlength="50"><br>
+		<input type="number" id="number" placeholder="ტელეფონი" maxlength="13"><br>
+		<input type="file" name="photo" size="2mb" accept="image/*,image/jpeg"><br>
+		<button type="button" class="send-data" id="sendData"">გაგზავნა</button>
+		<button сlass="clear-data">გასუფთავება</button>
+	</form>
+</section> -->
+
+	<footer>
+			<section class="footer-link" id="footer-link"></section>
+		<section class="copyright" id="copyright"></section>
+	</footer>
+	
+<script src="javascripts/reg.js"></script>
+<script src="javascripts/main.js"></script>
+
+</body>
+</html>

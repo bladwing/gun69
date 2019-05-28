@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gun || Ammo</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/modal.css">
+
+</head>
+<body>
+	<main>
+		<div class="logo" id="logo"></div>
+		<form action="get" class="search" id="search"></form>
+      <button class="auth-button-main" id="myBtn" >ავტორიზაცია</button>
+	</main>
+
+<nav id="nav"></nav>
+	
+<form method="post" action="">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="title">title</label>
+                <input 
+                type="text" 
+                class="form-control" 
+                id="title" 
+                placeholder="title" 
+                name="title" 
+                value="<%= products.title %>">
+            </div>
+     </div>
+     <button type="submit" class="btn btn-primary">Update Book</button>
+ </form>
+
+    
+
+
+<!-- ========================Modal Login start==================================== -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="container">
+    	<img src="images/logo.png" alt="">
+    <form method="post" class="login-form">
+    	<div id="error" class="error"></div>
+    	<input type="text" class="auth-form" placeholder="მომხმარებელი" id="username" required>
+    	<input type="password" placeholder="პაროლი" class="auth-form" id="userpassword" required>
+    	<hr>
+    	<button type="button" class="login-button" id="loginBtn" onclick="auth()"><i class="fas fa-sign-in-alt">ავტორიზაცია</i></button>
+    	<button type="button" class="registration-button" onclick="window.location.href='registration'"><i class="fas fa-user">რეგისტრაცია</i></button>
+    </form>
+    </div>
+  </div>
+
+</div>
+<!-- ========================Modal login End==================================== -->
+<section id="div"></section>
+	<footer>
+		<section class="footer-link" id="footer-link"></section>
+		<section class="copyright" id="copyright"></section>
+	</footer>
+	
+
+<script src="javascripts/main.js"></script>
+<script src="javascripts/modal.js"></script>
+
+
+</body>
+</html>

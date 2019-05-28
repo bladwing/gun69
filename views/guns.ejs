@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/modal.css">
+</head>
+<body>
+	<main>
+    <div class="logo" id="logo"></div>
+    <form action="get" class="search" id="search"></form>
+
+     <button class="auth-button-main" id="myBtn" >ავტორიზაცია</button>
+
+     <span class="label-place opnCard"></span> 
+     <i class="fas fa-cart-arrow-down  opnCard" id="open"></i>
+  </main>
+
+	<nav id="nav"><% include blocks/nav.ejs %></nav>
+		
+		    <div class="book--container">
+      <% product.forEach((book, idIndex) => { %>
+        <div class="book--item">
+
+          <h2 class="book--item__title">
+            <%= book.title %>
+          </h2>
+
+          <a href="/gun/<%= idIndex %>">
+            <img alt="<%= book.title %>" src="<%= book.imageLink %>" width="200"/>
+          </a>
+          
+          <div class="book-item__details">
+            <span><%= book.author %><span>
+            <span><%= book.country %><span>
+            <span><%= book.language %><span>
+            <span><%= book.pages %><span>
+            <span><%= book.year %><span>
+          </div>
+
+        </div>
+
+      <% })%>
+    <div>
+
+	<footer>
+		<section class="footer-link" id="footer-link"></section>
+		<section class="copyright" id="copyright"></section>
+	</footer>
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/modal.js"></script>
+	<script src="javascripts/aboutus.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "title": "ავტომატი AK47",
+    "author": "მიხეილ კალაშნიკოვი",
+    "country": "საქართველო",
+    "price": "2500",
+    "years": "1991",
+    "imageLink": "/images/ak47.png",
+    "id": 1559077547313
+  },
+  {
+    "title": "Assault Rifle",
+    "author": "Unknown",
+    "country": "Georgia",
+    "price": "2300",
+    "years": "1991",
+    "imageLink": "/images/assault_rifle.png",
+    "id": 1559077599086
+  },
+  {
+    "title": "Assault Rifle",
+    "author": "Unknown",
+    "country": "Georgia",
+    "price": "1900",
+    "years": "1991",
+    "imageLink": "/images/assault_rifle.png",
+    "id": 1559078815822
+  },
+  {
+    "title": "ავტომატი AK47",
+    "author": "მიხეილ კალაშნიკოვი",
+    "country": "Georgia",
+    "price": "2000",
+    "years": "1991",
+    "imageLink": "/images/ak47.png",
+    "id": 1559078886211
+  },
+  {
+    "title": "ავტომატი",
+    "author": "Unknown",
+    "country": "Georgia",
+    "price": "3500",
+    "years": "1991",
+    "imageLink": "/images/auto1.png",
+    "id": 1559079817800
+  },
+  {
+    "title": "ავტომატი",
+    "author": "საქართველო",
+    "country": "Georgia",
+    "price": "1700",
+    "years": "1991",
+    "imageLink": "/images/auto1.png",
+    "id": 1559079848769
+  },
+  {
+    "title": "Assault Rifle",
+    "author": "Unknown",
+    "country": "Georgia",
+    "price": "1700",
+    "years": "1991",
+    "imageLink": "/images/assault_rifle.png",
+    "id": 1559079879616
+  },
+  {
+    "title": "ავტომატი AK47",
+    "author": "მიხეილ კალაშნიკოვი",
+    "country": "რუსეთი",
+    "price": "2700",
+    "years": "1990",
+    "imageLink": "/images/ak47.png",
+    "id": 1559079945140
+  }
+]

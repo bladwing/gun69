@@ -1,0 +1,110 @@
+@font-face {
+font-family: 'BPG-Tech';
+src: url('../fonts/BPG Tech 10.1 Bold.ttf');
+}
+body {
+
+}
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+
+
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #3cc3b5;
+  margin: 10px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  top: 20%;
+  left: 9%;
+}
+.container > img {
+  width: 80%;
+  margin: 0 13%;
+
+}
+.auth-form {
+  width: 95%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #40c5b5;
+  color: #a51f29;
+}
+.auth-form:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.login-button,
+.registration-button,
+.auth-button-main {
+  border: 1px solid #40c5b5;
+  background-color: #3ebfba;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  font-family: 'BPG-Tech';
+}
+.login-button:hover,
+.registration-button:hover,
+.auth-button-main:hover {
+  color: #a51f29;
+  border: 1px solid #4ccfc1;
+  background-color: #fff;
+}
+.login-button {
+  float: right;
+}
+

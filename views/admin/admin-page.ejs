@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gun || Ammo</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/modal.css">
+
+</head>
+<body>
+	<main>
+		<div class="logo" id="logo"></div>
+		<form action="get" class="search" id="search"></form>
+      <button class="auth-button-main" id="myBtn" style="visibility: hidden;">ავტორიზაცია</button>
+	</main>
+
+<nav id="nav"><% include ../blocks/nav.ejs %></nav>
+	
+
+<form method="POST" action="/addProduct" class="add-product"><br>
+  <h2>პროდუქტის დამატება</h2><br>
+	<div id="error-massage"></div>
+	<input type="text" name="title" class="input-add-product" placeholder="პროდუქტის დასახელება" id="productName" maxlength="40" required><br>
+  <input type="text" name="author" class="input-add-product" placeholder="ინჯინერი" id="productAuthor" maxlength="40" required><br>
+  <input type="text" name="imageLink" class="input-add-product" placeholder="სურატი" id="producImg" maxlength="40" required><br>
+  <input type="text" name="country" class="input-add-product" placeholder="კვეყნა" id="producImg" maxlength="40" required><br>
+  <input type="text" name="years" class="input-add-product" placeholder="წელი" id="producYear" maxlength="8" required><br>
+	<input type="number" name="price" class="input-add-product" placeholder="ფასი" id="productPrice" required>
+	<button type="submit" class="productOpt addBtn" id="saveProd" value="დამატება">დამატება</button>
+</form>
+
+  <div class="productInUse">
+    <% products.forEach( product => { %>
+     <div data-id="<%= product.id %>" class="hhhh">
+                 <span>გამომშვები: <br> <%= product.author %></span><hr>
+                 <span>გამომშვები: <br> <%= product.title%></span><hr>
+				 <span><img src="<%= product.imageLink %>" style="width:60px;"></span><hr>
+                 <span>ვეყანა: <br> <%= product.country %></span><hr>
+                 <span>მოკლე აღწერა: <br> <%= product.aboutGun %></span><hr>
+                 <span>კოდი: <br> <%= product.id %> </span><hr>
+                 <span>წელი: <br> <%= product.years %></span><hr>
+        <button class="delete productOpt">წაშლა</button>
+      </div>
+    <% }) %>
+
+    </div>
+
+<script>
+let saveProd = document.querySelector("#saveProd")
+let x = document.querySelector("#productName");
+
+
+ 
+</script>
+<!-- ========================Modal Login start==================================== -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="container">
+    	<img src="images/logo.png" alt="">
+    <form method="post" class="login-form">
+    	<div id="error" class="error"></div>
+    	<input type="text" class="auth-form" placeholder="მომხმარებელი" id="username" required>
+    	<input type="password" placeholder="პაროლი" class="auth-form" id="userpassword" required>
+    	<hr>
+    	<button type="button" class="login-button" id="loginBtn" onclick="auth()"><i class="fas fa-sign-in-alt">ავტორიზაცია</i></button>
+    	<button type="button" class="registration-button" onclick="window.location.href='registration'"><i class="fas fa-user">რეგისტრაცია</i></button>
+    </form>
+    </div>
+  </div>
+
+</div>
+<!-- ========================Modal login End==================================== -->
+<section id="div"></section>
+	<footer>
+		<section class="footer-link" id="footer-link"></section>
+		<section class="copyright" id="copyright"></section>
+	</footer>
+	
+
+<script src="javascripts/main.js"></script>
+<script src="javascripts/modal.js"></script>
+
+
+</body>
+</html>

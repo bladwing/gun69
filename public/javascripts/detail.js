@@ -1,0 +1,1 @@
+const id = JSON.parse(localStorage.getItem('detail_id'));
