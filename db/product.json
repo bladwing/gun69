@@ -1,14 +1,5 @@
 [
   {
-    "title": "ავტომატი AK47",
-    "author": "მიხეილ კალაშნიკოვი",
-    "country": "საქართველო",
-    "price": "2500",
-    "years": "1991",
-    "imageLink": "/images/ak47.png",
-    "id": 1559077547313
-  },
-  {
     "title": "Assault Rifle",
     "author": "Unknown",
     "country": "Georgia",
@@ -70,5 +61,14 @@
     "years": "1990",
     "imageLink": "/images/ak47.png",
     "id": 1559079945140
+  },
+  {
+    "title": "AK47",
+    "author": "Mikheil Kalashnikov",
+    "country": "Georgia",
+    "price": "2500",
+    "years": "1991",
+    "imageLink": "/images/ak47.png",
+    "id": 1559231051010
   }
 ]

@@ -6,7 +6,7 @@ let cookieParser = require('cookie-parser');
 let bodyparser=require('body-parser');
 let logger = require('morgan');
 let indexRouter = require('./routes/index');
-let gunDetail = require('./routes/gunDetail')
+let gunDetail = require('./routes/gunDetail');
 
 let app = express();
 
@@ -19,7 +19,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
-// app.engine('ejs', require('consolidate').underscore);
 
 app.use('/', indexRouter);
 app.use('/guns', gunDetail);
@@ -64,10 +63,6 @@ app.delete("/", (req, res) => {
   }
   res.json({ status });
 });
-
-
-
-
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

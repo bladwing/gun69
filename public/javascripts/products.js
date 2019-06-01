@@ -1,5 +1,5 @@
 let products = JSON.parse(localStorage.getItem('products'))
-    let productsContainer = document.querySelector(".products")
+let productsContainer = document.querySelector('.products')
 
     if (products) {
         for (let i = 0; i < products.length; i++) {
@@ -13,20 +13,15 @@ let products = JSON.parse(localStorage.getItem('products'))
                 location.replace('detail')
             })
         })
-        
-    }
+    };
     function productHtml(product) {
         return `<div class="product1">
-
                   <a href="#" class="product-title">დასახელება:${product.title} </a>
-                        
-                    <div class="product-img" style="background-image:url(${product.picture})"></div>
-
+                      <div class="product-img" style="background-image:url(${product.picture})"></div>
                    <div class="product-description">პროდუქტის შესახებ:<br /><br />${product.desc} <br /> 
-                        <a href="javascript:void(0)" data-product="${product.id}" class="product--detail">ვრცლად...</a>
+                      <a href="javascript:void(0)" data-product="${product.id}" class="product--detail">ვრცლად...</a>
                    </div>
-                   <div class="price">ფასი:${product.price}₾</div>
-                   
-                   <button class="buy">ყიდვა</button>
+                      <div class="price">ფასი:${product.price}₾</div>
+                      <button class="buy">ყიდვა</button>
                 </div>`;
     }

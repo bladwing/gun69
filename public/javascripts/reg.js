@@ -12,10 +12,6 @@ const userName = document.querySelector('.auth-button-main-logout')
 	guestButtons.addEventListener('click', (event) => {
 		authorization.classList.add('active');
 	});
-
-
-
-
 	sendData.addEventListener('click', (event) => {
 		const name = document.querySelector('#name')
 		const username = document.querySelector('#username')
@@ -49,7 +45,6 @@ const userName = document.querySelector('.auth-button-main-logout')
 			}
 		}
 		else {
-			
 			let newUser = User(name.value, username.value, password.value, email.value, telephone.value, id)
 			let users = JSON.parse(localStorage.getItem('users'))
 			if (!users) {
@@ -70,7 +65,7 @@ signin.addEventListener('click', (event) => {
 			return (u.password == password.value && u.email == email.value)
 		})
 		if (!user) {
-			alert('gtxovT scadoT Tavidan')
+			alert('სცადეთ თავიდან')
 		}
 		else {
 			localStorage.setItem('active.User', user.idnumber)
@@ -103,10 +98,7 @@ signin.addEventListener('click', (event) => {
 			}
 		}
 	}
-
 	checkUser();
-
-
 	function findUserById(idNumber) {
 		let users = JSON.parse(localStorage.getItem('users'))
 		if (users) {
@@ -117,7 +109,6 @@ signin.addEventListener('click', (event) => {
 		}
 		return null;
 	}
-
 	function User(fname, lname, balance, idnumber, password, email) {
 		return {
 			fname,
