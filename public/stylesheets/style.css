@@ -753,7 +753,6 @@ textarea:focus::-webkit-input-placeholder {
 	list-style:inherit;
 }
 .error--item {
-	width: 100%;
 	margin: 5px 0;
 }
 
