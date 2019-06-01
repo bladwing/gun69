@@ -753,6 +753,7 @@ textarea:focus::-webkit-input-placeholder {
 	list-style:inherit;
 }
 .error--item {
+	width: 100%;
 	margin: 5px 0;
 }
 
@@ -880,7 +881,7 @@ ul {
 	margin: 20px auto;
 	text-align: center;
 }
-li {
+.ProductBlock {
 	width: 22%;
 	border: 1px solid #4ccfc1;
 	border-radius: 20px;
