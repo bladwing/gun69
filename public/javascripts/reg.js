@@ -84,7 +84,6 @@ signin.addEventListener('click', (event) => {
 				
 				const userCart = new Cart();
 				userCart.init('.add-in-cart');
-
 				guestButtons.classList.add('hidden')
 				userButtons.classList.remove('hidden')
 				userName.textContent = `${user.fname} ${user.lname}`
